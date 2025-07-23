@@ -1,0 +1,19 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "is anyone there", "hey"],
+      "responses": ["Hello! How can I assist you today?", "Hi there!"]
+    },
+    {
+      "tag": "pricing",
+      "patterns": ["price", "cost", "how much", "discount"],
+      "responses": ["Pricing starts at $20/month. Seasonal discounts available!"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you"],
+      "responses": ["Goodbye! Have a nice day.", "See you soon!"]
+    }
+  ]
+}
