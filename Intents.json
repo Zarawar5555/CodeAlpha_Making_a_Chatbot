@@ -1,19 +1,70 @@
+
 {
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["hi", "hello", "is anyone there", "hey"],
-      "responses": ["Hello! How can I assist you today?", "Hi there!"]
-    },
-    {
-      "tag": "pricing",
-      "patterns": ["price", "cost", "how much", "discount"],
-      "responses": ["Pricing starts at $20/month. Seasonal discounts available!"]
+      "patterns": ["hi", "hello", "is anyone there", "hey", "good morning", "good evening"],
+      "responses": ["Hello! How can I assist you today?", "Hi there! What can I do for you?"]
     },
     {
       "tag": "goodbye",
-      "patterns": ["bye", "goodbye", "see you"],
-      "responses": ["Goodbye! Have a nice day.", "See you soon!"]
+      "patterns": ["bye", "goodbye", "see you", "talk to you later"],
+      "responses": ["Goodbye! Have a great day!", "See you soon!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "appreciate it", "thx"],
+      "responses": ["You're welcome!", "Happy to help!"]
+    },
+    {
+      "tag": "pricing",
+      "patterns": ["price", "cost", "how much", "what's the price", "fee"],
+      "responses": ["Our pricing starts at $20/month. Discounts available on annual plans."]
+    },
+    {
+      "tag": "delivery",
+      "patterns": ["when will my order arrive", "delivery time", "shipping details"],
+      "responses": ["Orders are delivered within 3-5 business days."]
+    },
+    {
+      "tag": "refund",
+      "patterns": ["refund", "return", "money back", "how to return"],
+      "responses": ["You can request a refund within 14 days of purchase."]
+    },
+    {
+      "tag": "support",
+      "patterns": ["need help", "support", "contact support", "customer service"],
+      "responses": ["You can reach our support team at support@example.com."]
+    },
+    {
+      "tag": "working_hours",
+      "patterns": ["what are your hours", "when are you open", "working time"],
+      "responses": ["We’re available from 9am to 6pm, Monday through Saturday."]
+    },
+    {
+      "tag": "location",
+      "patterns": ["where are you located", "office address", "store location"],
+      "responses": ["Our main office is in Islamabad, Pakistan."]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": ["how can I pay", "payment methods", "credit card", "paypal"],
+      "responses": ["We accept Visa, MasterCard, PayPal, and bank transfer."]
+    },
+    {
+      "tag": "track_order",
+      "patterns": ["track my order", "order status", "where is my package"],
+      "responses": ["Please enter your order ID to track your package."]
+    },
+    {
+      "tag": "offers",
+      "patterns": ["any discounts", "special offer", "promo", "coupon"],
+      "responses": ["Yes! We're currently offering 15% off all plans. Use code SAVE15."]
+    },
+    {
+      "tag": "products",
+      "patterns": ["what products do you sell", "catalog", "product list"],
+      "responses": ["We offer electronics, clothing, and home appliances."]
     }
   ]
 }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChatBot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h2>Ask Me Anything!</h2>
+  <div id="chatbox"></div>
+  <input id="msg" placeholder="Type a message..." />
+  <button onclick="send()">Send</button>
+
+  <script>
+    async function send() {
+      const msg = document.getElementById("msg").value;
+      const res = await fetch("/get", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ msg: msg })
+      });
+      const data = await res.json();
+      document.getElementById("chatbox").innerHTML += "<b>You:</b> " + msg + "<br><b>Bot:</b> " + data.response + "<br>";
+      document.getElementById("msg").value = "";
+    }
+  </script>
+</body>
+</html>
