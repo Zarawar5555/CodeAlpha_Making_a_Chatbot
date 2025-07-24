@@ -35,3 +35,6 @@ Supervisor is configured to manage the Gunicorn process, restarting it automatic
 
 This design follows industry best practices for separating application logic, web serving, and process management. 
 It provides a modular, scalable, and easily deployable chatbot framework for small commercial applications.
+
+
+To test it yourself: http://13.127.4.34:8000/
